@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FINOLINK - AI-Powered Financing</title>
     <link rel="stylesheet" href="hero-section.css">
+    <script src="assets/lang/en.js"></script>
+    <script src="assets/lang/zh-CN.js"></script>
+    <script src="assets/lang/zh-HANT.js"></script>
 </head>
 
 <body>
@@ -13,17 +16,32 @@
         <div class="container">
             <header class="header">
                 <div class="logo">
-
                     <img src="assets/images/icon@X3.png" alt="FINOLINK Logo" class="logo-icon">
                     <span class="logo-text">FINOLINK</span>
                 </div>
                 <nav class="navigation">
-                    <a href="#home" class="nav-item">Home</a>
-                    <a href="#finolink" class="nav-item">Finolink</a>
-                    <a href="#partners" class="nav-item">Partners</a>
-                    <a href="#principle" class="nav-item">Principle</a>
+                    <a href="#home" class="nav-item" data-i18n="navigation.home">Home</a>
+                    <a href="#finolink" class="nav-item" data-i18n="navigation.finolink">Finolink</a>
+                    <a href="#partners" class="nav-item" data-i18n="navigation.partners">Partners</a>
+                    <a href="#principle" class="nav-item" data-i18n="navigation.principle">Principle</a>
                 </nav>
-                <a href="#contact" class="connect-button">Connect</a>
+                <a href="#contact" class="connect-button" data-i18n="navigation.connect">Connect</a>
+
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <button class="language-btn" id="languageBtn">
+                        <span class="language-text" id="currentLang">EN</span>
+                        <svg class="language-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <button class="language-option" data-lang="en">English</button>
+                        <button class="language-option" data-lang="zh-CN">简体中文</button>
+                        <button class="language-option" data-lang="zh-HANT">繁體中文</button>
+                    </div>
+                </div>
 
                 <!-- Mobile menu button -->
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -34,11 +52,11 @@
 
                 <!-- Mobile navigation menu -->
                 <div class="mobile-navigation" id="mobileNavigation">
-                    <a href="#home" class="mobile-nav-item">Home</a>
-                    <a href="#finolink" class="mobile-nav-item">Finolink</a>
-                    <a href="#partners" class="mobile-nav-item">Partners</a>
-                    <a href="#principle" class="mobile-nav-item">Principle</a>
-                    <a href="#contact" class="mobile-nav-item">Connect</a>
+                    <a href="#home" class="mobile-nav-item" data-i18n="navigation.home">Home</a>
+                    <a href="#finolink" class="mobile-nav-item" data-i18n="navigation.finolink">Finolink</a>
+                    <a href="#partners" class="mobile-nav-item" data-i18n="navigation.partners">Partners</a>
+                    <a href="#principle" class="mobile-nav-item" data-i18n="navigation.principle">Principle</a>
+                    <a href="#contact" class="mobile-nav-item" data-i18n="navigation.connect">Connect</a>
                 </div>
 
                 <!-- Mobile menu overlay -->
@@ -51,20 +69,21 @@
                         <img src="assets/images/5e8e0f0d796095d5a7eca1ba3254361f2ed5d0f6.svg"
                             alt="Financial Institutions,Technology Service Platform" class="badge-icon">
                     </div>
-                    <span class="badge-text">Financial Institutions,Technology Service Platform</span>
+                    <span class="badge-text" data-i18n="hero.badge">Financial Institutions,Technology Service
+                        Platform</span>
                 </div>
 
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-i18n="hero.title">
                     AI-Powered &nbsp;&nbsp;Financing<br>
                     for Global &nbsp;&nbsp; E-Commerce
                 </h1>
 
-                <p class="hero-subtitle">
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
                     A Technology Service Platform Focusing<br>
                     on E-commerce Enterprises and Adapting to Financial Institutions
                 </p>
 
-                <a href="#contact" class="cta-button">GET IN TOUCH</a>
+                <a href="#contact" class="cta-button" data-i18n="hero.cta">GET IN TOUCH</a>
             </main>
         </div>
 
@@ -100,9 +119,9 @@
                                         fill="#171717" />
                                 </svg>
                             </div>
-                            <div class="stat-label">Merchants</div>
+                            <div class="stat-label" data-i18n="stats.merchants.label">Merchants</div>
                         </div>
-                        <div class="stat-number">1,000,000+</div>
+                        <div class="stat-number" data-i18n="stats.merchants.number">1,000,000+</div>
                     </div>
 
                     <div class="stat-card">
@@ -115,9 +134,9 @@
                                         fill="black" />
                                 </svg>
                             </div>
-                            <div class="stat-label">Loans issued</div>
+                            <div class="stat-label" data-i18n="stats.loans.label">Loans issued</div>
                         </div>
-                        <div class="stat-number">¥10B+</div>
+                        <div class="stat-number" data-i18n="stats.loans.number">¥10B+</div>
                     </div>
 
                     <div class="stat-card">
@@ -130,15 +149,15 @@
                                         fill="black" />
                                 </svg>
                             </div>
-                            <div class="stat-label">E-commerce partners</div>
+                            <div class="stat-label" data-i18n="stats.partners.label">E-commerce partners</div>
                         </div>
-                        <div class="stat-number">2800</div>
+                        <div class="stat-number" data-i18n="stats.partners.number">2800</div>
                     </div>
                 </div>
 
                 <div class="finolink-way">
-                    <h2 class="section-title">The FINOLINK Way</h2>
-                    <p class="section-description">
+                    <h2 class="section-title" data-i18n="finolink_way.title">The FINOLINK Way</h2>
+                    <p class="section-description" data-i18n="finolink_way.description">
                         FINOLINK is a global fintech platform headquartered in Hong Kong,
                         with operations in Beijing, Shenzhen, and Chengdu.
                         <br>
@@ -157,37 +176,41 @@
     <!-- Third Section - Solutions -->
     <section class="solutions-section">
         <div class="container">
-            <h2 class="solutions-title">One Platform, Multiple Solutions.</h2>
+            <h2 class="solutions-title" data-i18n="solutions.title">One Platform, Multiple Solutions.</h2>
             <div class="solutions-grid">
                 <div class="solution-card">
                     <div class="solution-image">
                         <img src="assets/images/solution-1.png" alt="AI Risk Engine">
                     </div>
-                    <h3 class="solution-title">AI Risk Engine</h3>
-                    <p class="solution-description">Real-time modeling of 200+ data points per order.</p>
+                    <h3 class="solution-title" data-i18n="solutions.cards.0.title">AI Risk Engine</h3>
+                    <p class="solution-description" data-i18n="solutions.cards.0.description">Real-time modeling of 200+
+                        data points per order.</p>
                 </div>
 
                 <div class="solution-card">
                     <div class="solution-image">
                         <img src="assets/images/solution-2.png" alt="Financing Solutions">
                     </div>
-                    <h3 class="solution-title">Financing Solutions</h3>
-                    <p class="solution-description">Procurement, inventory, receivables & cashflow loans.</p>
+                    <h3 class="solution-title" data-i18n="solutions.cards.1.title">Financing Solutions</h3>
+                    <p class="solution-description" data-i18n="solutions.cards.1.description">Procurement, inventory,
+                        receivables & cashflow loans.</p>
                 </div>
                 <div class="solution-card">
                     <div class="solution-image">
                         <img src="assets/images/solution-3.png" alt="Post-Loan Monitoring">
                     </div>
-                    <h3 class="solution-title">Post-Loan Monitoring</h3>
-                    <p class="solution-description">24/7 AI monitoring with repayment tracking.</p>
+                    <h3 class="solution-title" data-i18n="solutions.cards.2.title">Post-Loan Monitoring</h3>
+                    <p class="solution-description" data-i18n="solutions.cards.2.description">24/7 AI monitoring with
+                        repayment tracking.</p>
                 </div>
 
                 <div class="solution-card">
                     <div class="solution-image">
                         <img src="assets/images/solution-4.png" alt="Global Reach">
                     </div>
-                    <h3 class="solution-title">Global Reach</h3>
-                    <p class="solution-description">Supporting domestic & cross border merchants.</p>
+                    <h3 class="solution-title" data-i18n="solutions.cards.3.title">Global Reach</h3>
+                    <p class="solution-description" data-i18n="solutions.cards.3.description">Supporting domestic &
+                        cross border merchants.</p>
                 </div>
             </div>
         </div>
@@ -196,7 +219,7 @@
     <!-- Fourth Section - Features -->
     <section class="features-section">
         <div class="container">
-            <h2 class="features-title">Built for the Future of Global Trade Finance</h2>
+            <h2 class="features-title" data-i18n="features.title">Built for the Future of Global Trade Finance</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-content">
@@ -239,9 +262,11 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h3 class="fourth-section-title">DEEP PLATFORM INTEGRATION</h3>
+                        <h3 class="fourth-section-title" data-i18n="features.cards.0.title">DEEP PLATFORM INTEGRATION
+                        </h3>
                     </div>
-                    <p class="feature-description">Direct data links with leading global e-commerce platforms.</p>
+                    <p class="feature-description" data-i18n="features.cards.0.description">Direct data links with
+                        leading global e-commerce platforms.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-content">
@@ -268,9 +293,10 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h3 class="fourth-section-title">ADVANCED AI MODELS</h3>
+                        <h3 class="fourth-section-title" data-i18n="features.cards.1.title">ADVANCED AI MODELS</h3>
                     </div>
-                    <p class="feature-description">Dynamic credit scoring,fraud detection, and 24/7 monitoring.</p>
+                    <p class="feature-description" data-i18n="features.cards.1.description">Dynamic credit scoring,fraud
+                        detection, and 24/7 monitoring.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-content">
@@ -297,9 +323,10 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h3 class="fourth-section-title">COMPREHENSIVE ECOSYSTEM</h3>
+                        <h3 class="fourth-section-title" data-i18n="features.cards.2.title">COMPREHENSIVE ECOSYSTEM</h3>
                     </div>
-                    <p class="feature-description">From pre-loan approval to post-loan tracking, all in one system.</p>
+                    <p class="feature-description" data-i18n="features.cards.2.description">From pre-loan approval to
+                        post-loan tracking, all in one system.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-content">
@@ -326,11 +353,12 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h3 class="fourth-section-title">
+                        <h3 class="fourth-section-title" data-i18n="features.cards.3.title">
                             PROVEN SCALE
                         </h3>
                     </div>
-                    <p class="feature-description">Established in China with nationwide adoption, now expanding
+                    <p class="feature-description" data-i18n="features.cards.3.description">Established in China with
+                        nationwide adoption, now expanding
                         globally.</p>
                 </div>
 
@@ -343,8 +371,9 @@
         <div class="container">
             <div class="platforms-content">
                 <div class="platforms-text">
-                    <h2 class="platforms-title">Connected to the World's Leading Platforms</h2>
-                    <p class="platforms-description">
+                    <h2 class="platforms-title" data-i18n="platforms.title">Connected to the World's Leading Platforms
+                    </h2>
+                    <p class="platforms-description" data-i18n="platforms.description">
                         FINOLINK INTEGRATES DIRECTLY WITH THE PLATFORMS THAT POWER GLOBAL E-COMMERCE, ENSURING
                         REAL-TIME, TRUSTED DATA FOR FINANCING.
                     </p>
@@ -362,7 +391,7 @@
         <div class="container">
             <div class="partners-content">
                 <div class="partners-text">
-                    <h2 class="partners-title"> Partner Banks</h2>
+                    <h2 class="partners-title" data-i18n="partner_sections.banks"> Partner Banks</h2>
                 </div>
                 <div class="partners-visual">
                     <img class="partners-img" src="assets/images/Partner_Banks.svg" alt="Partner Banks">
@@ -372,7 +401,7 @@
         <div class="container">
             <div class="e-commerce-content">
                 <div class="partners-text e-commerce-title">
-                    <h2 class="partners-title"> E-Commerce Platforms</h2>
+                    <h2 class="partners-title" data-i18n="partner_sections.ecommerce"> E-Commerce Platforms</h2>
                 </div>
                 <div class="partners-visual">
                     <img class="partners-img-e-commerce" src="assets/images/E-Commerce_Platforms.svg"
@@ -384,7 +413,7 @@
             <div class="partners-two-columns">
                 <div class="partners-column">
                     <div class="partners-text">
-                        <h2 class="partners-title"> Logistics Partners</h2>
+                        <h2 class="partners-title" data-i18n="partner_sections.logistics"> Logistics Partners</h2>
                     </div>
                     <div class="partners-visual">
                         <img class="partners-img-other" src="assets/images/Logistics_Partners.svg"
@@ -393,7 +422,8 @@
                 </div>
                 <div class="partners-column partners-column-2">
                     <div class="partners-text">
-                        <h2 class="partners-title"> Technology & Data Partners</h2>
+                        <h2 class="partners-title" data-i18n="partner_sections.technology"> Technology & Data Partners
+                        </h2>
                     </div>
                     <div class="partners-visual">
                         <img class="partners-img-other" src="assets/images/Technology_Data_Partners.svg"
@@ -404,8 +434,8 @@
         </div>
         <div class="container partners-bottom-container">
             <div class="partners-content">
-                <div class="partners-bottom-text">
-                    And 2,800+ ecosystem partners across
+                <div class="partners-bottom-text" data-i18n="partner_sections.ecosystem">
+                    And 2,800+ ecosystem partners across<br>
                     China and beyond.
                 </div>
             </div>
@@ -416,7 +446,7 @@
     <section class="trade-hero-section">
         <div class="container">
             <div class="trade-hero-content">
-                <h2 class="trade-hero-title">
+                <h2 class="trade-hero-title" data-i18n="trade_hero.title">
                     Turning e-commerce data into
                     <br>
                     financial power for a new era of global trade.
@@ -431,47 +461,51 @@
     <!-- Seventh Section - How FINOLINK Works -->
     <section class="how-works-section">
         <div class="container">
-            <h2 class="how-works-title">How FINOLINK Works</h2>
+            <h2 class="how-works-title" data-i18n="how_works.title">How FINOLINK Works</h2>
             <div class="how-works-grid">
                 <div class="work-step">
                     <div class="step-number">1</div>
-                    <h3 class="step-title">
+                    <h3 class="step-title" data-i18n="how_works.steps.0.title">
                         STEP 1:<br>
                         PRE-LOAN
 
                     </h3>
-                    <p class="step-description">Real-time data collection from multiple e-commerce platforms and
+                    <p class="step-description" data-i18n="how_works.steps.0.description">Real-time data collection from
+                        multiple e-commerce platforms and
                         financial institutions.</p>
                 </div>
                 <!-- <img src="assets/images/icon_arrow_right.svg" alt="Arrow Right" style="float: right;"> -->
 
                 <div class="work-step">
                     <div class="step-number"> 2</div>
-                    <h3 class="step-title">
+                    <h3 class="step-title" data-i18n="how_works.steps.1.title">
                         STEP 2:<br>
                         LOAN MANAGEMENT
                     </h3>
-                    <p class="step-description">AI-powered analysis of 200+ data points to determine credit worthiness
+                    <p class="step-description" data-i18n="how_works.steps.1.description">AI-powered analysis of 200+
+                        data points to determine credit worthiness
                         and risk profile.</p>
                 </div>
 
                 <div class="work-step">
                     <div class="step-number"> 3</div>
-                    <h3 class="step-title">
+                    <h3 class="step-title" data-i18n="how_works.steps.2.title">
                         STEP 3:<br>
                         POST-LOAN
                     </h3>
-                    <p class="step-description">Automated decision-making process for fast and efficient financing
+                    <p class="step-description" data-i18n="how_works.steps.2.description">Automated decision-making
+                        process for fast and efficient financing
                         approvals.</p>
                 </div>
 
                 <div class="work-step">
                     <div class="step-number"> 4</div>
-                    <h3 class="step-title">
+                    <h3 class="step-title" data-i18n="how_works.steps.3.title">
                         STEP 4:<br>
                         RISK CONTROL
                     </h3>
-                    <p class="step-description">Continuous monitoring and real-time updates on repayment status and risk
+                    <p class="step-description" data-i18n="how_works.steps.3.description">Continuous monitoring and
+                        real-time updates on repayment status and risk
                         changes.</p>
                 </div>
             </div>
@@ -483,11 +517,11 @@
     <!-- Footer CTA -->
     <section id="principle" class="footer-cta-section container">
         <div class="footer-cta-content">
-            <h2 class="footer-cta-title">Let’s Build the Future of</h2>
-            <h2 class="footer-cta-title" style="margin-top: -20px;">Trade Finance</h2>
-            <p class="footer-cta-description">Partner with FINOLINK and unlock new opportunities in global e-commerce.
+            <h2 class="footer-cta-title" data-i18n="footer_cta.title">Let's Build the Future of<br>Trade Finance</h2>
+            <p class="footer-cta-description" data-i18n="footer_cta.description">Partner with FINOLINK and unlock new
+                opportunities in global e-commerce.
             </p>
-            <a href="#contact" class="footer-cta-button">REQUEST A DEMO</a>
+            <a href="#contact" class="footer-cta-button" data-i18n="footer_cta.button">REQUEST A DEMO</a>
         </div>
         <div class="footer-cta-bg-elements">
             <div class="circle cta-circle-3"></div>
@@ -500,7 +534,7 @@
     </section>
 
     <!-- Back to Top Button -->
-    <button id="backToTopBtn" class="back-to-top-btn" title="Back to top">
+    <button id="backToTopBtn" class="back-to-top-btn" data-i18n-title="ui.back_to_top" title="Back to top">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="18,15 12,9 6,15"></polyline>
@@ -517,11 +551,11 @@
 
                 <div id="contact" class="footer-contact">
                     <div class="contact-item">
-                        <p class="contact-label">EMAIL</p>
+                        <p class="contact-label" data-i18n="footer.contact.email_label">EMAIL</p>
                         <a href="mailto:contact@finolink.ai" class="contact-value">contact@finolink.ai</a>
                     </div>
                     <div class="contact-item">
-                        <p class="contact-label">PHONE</p>
+                        <p class="contact-label" data-i18n="footer.contact.phone_label">PHONE</p>
                         <a href="tel:+85245675860" class="contact-value">(852) 456-7860</a>
                     </div>
                 </div>
@@ -538,7 +572,8 @@
 
                 <div class="footer-bottom-row">
                     <div class="footer-legal">
-                        <p class="legal-text">Operated via China Prestige Capital (Holding) Limited · HK Money Lender's
+                        <p class="legal-text" data-i18n="footer.legal">Operated via China Prestige Capital (Holding)
+                            Limited · HK Money Lender's
                             Licence No. 1584/2024</p>
                     </div>
 
@@ -559,6 +594,172 @@
     </footer>
 
     <script>
+        // Language switching functionality
+        //尝试从storage中获取语言
+        let currentLang = localStorage.getItem('finolink-language') || 'en';
+        console.log(currentLang);
+        let translations = {};
+
+        // Language data loaded from external files
+        // Check if language data is available
+        function checkLanguageData() {
+            return window.languageData && typeof window.languageData === 'object';
+        }
+
+        // Load language from external data
+        function loadLanguage(lang) {
+            if (!checkLanguageData()) {
+                console.error('Language data not loaded');
+                return {};
+            }
+            console.log(window.languageData);
+
+            if (window.languageData[lang]) {
+                translations = window.languageData[lang];
+                return translations;
+            } else {
+                // Fallback to English
+                if (window.languageData['en']) {
+                    translations = window.languageData['en'];
+                    return translations;
+                }
+                console.error('No language data available');
+                return {};
+            }
+        }
+
+        // Apply translations to the page
+        function applyTranslations() {
+            // Handle regular data-i18n attributes
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                const translation = getNestedTranslation(key);
+                if (translation) {
+                    element.innerHTML = translation;
+                }
+            });
+
+            // Handle title attributes
+            document.querySelectorAll('[data-i18n-title]').forEach(element => {
+                const key = element.getAttribute('data-i18n-title');
+                const translation = getNestedTranslation(key);
+                if (translation) {
+                    element.setAttribute('title', translation);
+                }
+            });
+        }
+
+        // Get nested translation value using dot notation
+        function getNestedTranslation(key) {
+            const keys = key.split('.');
+            let value = translations;
+
+            for (const k of keys) {
+                if (value && typeof value === 'object') {
+                    // Handle array indices like "cards.0.title"
+                    if (!isNaN(k) && Array.isArray(value)) {
+                        value = value[parseInt(k)];
+                    } else {
+                        value = value[k];
+                    }
+                } else {
+                    return null;
+                }
+            }
+
+            return value || null;
+        }
+
+        // Initialize language on page load
+        function initLanguage() {
+            // Get language from localStorage or default to 'en'
+            const savedLang = localStorage.getItem('finolink-language') || 'en';
+            switchLanguage(savedLang);
+        }
+
+        // Switch language
+        function switchLanguage(lang) {
+            loadLanguage(lang);
+            applyTranslations();
+            currentLang = lang;
+            localStorage.setItem('finolink-language', lang);
+        }
+
+        // Language selector functionality
+        function updateLanguageDisplay(lang) {
+            const currentLangElement = document.getElementById('currentLang');
+            const languageOptions = document.querySelectorAll('.language-option');
+
+            // Update display text
+            const langMap = {
+                'en': 'EN',
+                'zh-CN': '简中',
+                'zh-HANT': '繁中'
+            };
+
+            if (currentLangElement) {
+                currentLangElement.textContent = langMap[lang] || 'EN';
+            }
+
+            // Update active state
+            languageOptions.forEach(option => {
+                if (option.dataset.lang === lang) {
+                    option.classList.add('active');
+                } else {
+                    option.classList.remove('active');
+                }
+            });
+        }
+
+        // Initialize language selector
+        function initLanguageSelector() {
+            const languageBtn = document.getElementById('languageBtn');
+            const languageDropdown = document.getElementById('languageDropdown');
+            const languageOptions = document.querySelectorAll('.language-option');
+
+            if (!languageBtn || !languageDropdown) return;
+
+            // Toggle dropdown
+            languageBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                languageBtn.classList.toggle('active');
+                languageDropdown.classList.toggle('show');
+            });
+
+            // Handle language selection
+            languageOptions.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const selectedLang = option.dataset.lang;
+
+                    // Switch language
+                    switchLanguage(selectedLang);
+
+                    // Update display
+                    updateLanguageDisplay(selectedLang);
+
+                    // Close dropdown
+                    languageBtn.classList.remove('active');
+                    languageDropdown.classList.remove('show');
+                });
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', () => {
+                languageBtn.classList.remove('active');
+                languageDropdown.classList.remove('show');
+            });
+
+            // Update display for current language
+            updateLanguageDisplay(currentLang);
+        }
+
+        // Initialize language when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            initLanguage();
+            initLanguageSelector();
+        });
+
         // Mobile menu functionality
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileNavigation = document.getElementById('mobileNavigation');
