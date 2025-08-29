@@ -1,0 +1,10 @@
+/.history/docs
+/.vscode/
+/node_modules/
+/dist/
+/build/
+/coverage/
+/docs/
+/logs/
+/temp/
+/tmp/
