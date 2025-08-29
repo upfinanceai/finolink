@@ -13,7 +13,7 @@
         <div class="container">
             <header class="header">
                 <div class="logo">
-                    
+
                     <img src="assets/images/icon@X3.png" alt="FINOLINK Logo" class="logo-icon">
                     <span class="logo-text">FINOLINK</span>
                 </div>
@@ -24,14 +24,14 @@
                     <a href="#principle" class="nav-item">Principle</a>
                 </nav>
                 <a href="#contact" class="connect-button">Connect</a>
-                
+
                 <!-- Mobile menu button -->
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
-                
+
                 <!-- Mobile navigation menu -->
                 <div class="mobile-navigation" id="mobileNavigation">
                     <a href="#home" class="mobile-nav-item">Home</a>
@@ -40,7 +40,7 @@
                     <a href="#principle" class="mobile-nav-item">Principle</a>
                     <a href="#contact" class="mobile-nav-item">Connect</a>
                 </div>
-                
+
                 <!-- Mobile menu overlay -->
                 <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
             </header>
@@ -365,7 +365,7 @@
                     <h2 class="partners-title"> Partner Banks</h2>
                 </div>
                 <div class="partners-visual">
-                    <img class="partners-img" src="assets/images/Partner_banks.svg" alt="Partner Banks">
+                    <img class="partners-img" src="assets/images/Partner_Banks.svg" alt="Partner Banks">
                 </div>
             </div>
         </div>
@@ -501,7 +501,8 @@
 
     <!-- Back to Top Button -->
     <button id="backToTopBtn" class="back-to-top-btn" title="Back to top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="18,15 12,9 6,15"></polyline>
         </svg>
     </button>
@@ -562,16 +563,16 @@
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileNavigation = document.getElementById('mobileNavigation');
         const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-        
+
         function openMobileMenu() {
             mobileMenuBtn.classList.add('active');
             mobileNavigation.classList.add('active');
             mobileMenuOverlay.classList.add('active');
             // Prevent body scroll when menu is open
-            
+
             document.body.style.overflow = 'hidden';
         }
-        
+
         function closeMobileMenu() {
             mobileMenuBtn.classList.remove('active');
             mobileNavigation.classList.remove('active');
@@ -579,30 +580,30 @@
             // Restore body scroll
             document.body.style.overflow = '';
         }
-        
-        mobileMenuBtn.addEventListener('click', function() {
+
+        mobileMenuBtn.addEventListener('click', function () {
             if (mobileMenuBtn.classList.contains('active')) {
                 closeMobileMenu();
             } else {
                 openMobileMenu();
             }
         });
-        
+
         // Close mobile menu when clicking on nav items
         const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
         mobileNavItems.forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 closeMobileMenu();
             });
         });
-        
+
         // Close mobile menu when clicking on overlay
-        mobileMenuOverlay.addEventListener('click', function() {
+        mobileMenuOverlay.addEventListener('click', function () {
             closeMobileMenu();
         });
-        
+
         // Close mobile menu when clicking outside (keep for backward compatibility)
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             const header = document.querySelector('.header');
             if (!header.contains(event.target) && !mobileMenuOverlay.contains(event.target)) {
                 closeMobileMenu();
@@ -613,7 +614,7 @@
         const backToTopBtn = document.getElementById('backToTopBtn');
 
         // Show/hide back to top button based on scroll position
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.pageYOffset > 300) {
                 backToTopBtn.classList.add('show');
             } else {
@@ -622,7 +623,7 @@
         });
 
         // Scroll to top when button is clicked
-        backToTopBtn.addEventListener('click', function() {
+        backToTopBtn.addEventListener('click', function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
